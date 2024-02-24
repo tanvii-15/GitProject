@@ -1,0 +1,30 @@
+<html>
+    <head>
+        Calculator
+    </head>
+    <br>
+
+    <body>
+        <input id="1"/>
+        
+        <input id="2"/>
+        <br>
+
+        <button id="btn">ADD</button>
+        <p id="Result">       </p>
+
+
+
+    </body>
+    <script>
+
+        document.getElementById("btn").onclick=Add;
+       function Add()
+       {
+          let a=document.getElementById("1").value;
+          let b=document.getElementById("2").value;
+          let result =parseInt(a)+parseInt(b);
+          document.getElementById("Result").innerHTML=result;
+       }
+    </script>
+</html>
